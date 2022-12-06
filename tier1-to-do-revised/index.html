@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Wesite</title>
+    <link rel="stylesheet" href="main.css"> 
+    <!-- imports the CSS -->
+</head>
+<body>
+
+    <!-- Create the header/Nav Bar with an input box and a submit button -->
+    <div id="myDIV" class="header">
+        <h2>CS 279 To Do List</h2>
+        <input type="text" id="myInput" placeholder="Add task">
+        <!-- Create the button, when clicked we want JS to add this to the list of items below -->
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    
+    <!-- Create the initial list. Could Also be empty w/o the li componenets -->
+    <ul id="myUL">
+        <li>Tier 1 Programming Assignment</li>
+        <li>Readings for next week</li>
+    </ul>
+
+    <!-- Imports the JS -->
+    <script src="app.js"></script>
+    <noscript>JavaScript is required for the page to work as intended.</noscript>
+</body>
+</html>

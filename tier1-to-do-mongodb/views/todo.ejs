@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <!-- give the website a title, shows up on the tab name in the browser -->
+    <title>Todo App</title>
+    <!-- import the CSS -->
+    <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+    <!-- import the font and combine it with the stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+    <!-- add more to the font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+            <div class="todo">
+                <!-- style the form with an input and submit button -->
+                <!-- When the form is submitted use the post method defined in index.js -->
+                <form action="/" method="POST" class="todo-header">
+                    <input type="text" name="content">
+                    <button type="submit"><span class="fas fa-plus"></span></button>
+                </form>
+                <!-- this is the actual list of items -->
+                <ul class="todo-list">
+                    <% todoTasks.forEach(details => { %>
+                    <li class="todo-list-item">
+                        <div class="todo-list-item-name"><%= details.content %></div>
+                        <a href="/edit/<%= details._id %>" class="edit">
+                            <span class="fas fa-edit"></span>
+                        </a>
+                        <a href="/remove/<%= details._id %>" class="remove">
+                            <span class="fas fa-times"></span>
+                        </a>
+                    </li>
+                    <% }) %>
+                    </ul>
+            </div>
+        </div>
+</body>

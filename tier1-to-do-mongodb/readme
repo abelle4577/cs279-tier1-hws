@@ -1,0 +1,11 @@
+[Tier 1] Programming HW1: Make a To-Do App with Node.js and MongoDB
+
+based on https://medium.com/@diogo.fg.pinheiro/simple-to-do-list-app-with-node-js-and-mongodb-chapter-1-c645c7a27583
+and
+https://medium.com/@diogo.fg.pinheiro/simple-to-do-list-app-with-node-js-and-mongodb-chapter-2-3780a1c5b039
+
+to open this app go to your directory where it is saved
+(go into the folder tier1-to-do-mongodb)
+type cmd in the directory bar or open your terminal
+run npm start
+go to http://localhost:3000 in your browser
